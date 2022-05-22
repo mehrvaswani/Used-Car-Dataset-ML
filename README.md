@@ -1,7 +1,7 @@
 # Used-Car-Dataset-ML
 
 ## Objective
-Build a model to predict entry prices of used cars limited to 4 input variables using the used cars dataset from Kaggle, collected by Austin Reese, which contains 45K+ used car seller entries and 26 input variables from Craigslist.
+Build a model to predict entry prices of used cars using Python on Jupyter Notebook limited to 4 input variables using the used cars dataset from Kaggle, collected by Austin Reese, which contains 45K+ used car seller entries and 26 input variables from Craigslist.
 
 ## Description
 We first tested Linear Regression as an experiment for comparison. A Random Forest Regression was then used in conjunction with a randomised search cross-validation because of its ‘wisdom of the crowds’ approach, whereby multiple decision trees are combined into a final tree and despite each decision tree having a high variance, combining all of them reduces the resulting variance. Moreover, Random Forests are accommodating to categorical and numerical variables, are less sensitive to missing data, and handle outliers well. Lastly, Random Forests display feature importances, which is useful to help us narrow down our variables from nine (‘manufacturer’, ‘drive’, ‘transmission’, ‘type’, ‘fuel’, ‘paint color’, ‘state’, ‘year’, and ‘odometer’) to four. For our practical, we measure the performance of our model based on the accuracy on both the training and test set, Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE) - both measure the average of errors as defined by the differences between the predicted values and actual values. 
